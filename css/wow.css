@@ -1,0 +1,564 @@
+﻿html, body
+{
+    height: 100%;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Englebert' , sans-serif;
+    font-size: 16pt;
+}
+
+h1, h2, h3, h4
+{
+    color: #000000;
+    margin: 0 0 20px 0;
+}
+
+#header
+{
+    background-image: url(../img/header.jpg);
+    width: 100%;
+    height: 612px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    box-shadow: 0px 0px 8px 0 #6c6c6c;
+}
+
+#header #logo
+{
+    background-image: url(../img/logo.png);
+    width: 128px;
+    height: 128px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#header-title
+{
+    color: #ffffff;
+    font-size: 300%;
+    font-weight: bold;
+    position: relative;
+    top: 340px;
+}
+
+#container
+{
+    width: 95%;
+    margin: 20px auto;
+}
+
+#container #left
+{
+    width: 35%;
+    float: left;
+}
+
+#container #right
+{
+    width: 60%;
+    float: left;
+    margin-left: 2%;
+}
+
+.character
+{
+    float: left;
+    width: 260px;
+    margin: 15px;
+    background-color: #e3e3e3;
+    padding: 10px;
+    height: 95px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: url(../img/bg2.jpg);
+    box-shadow: 0px 0px 12px 0px #ffffff;
+}
+
+.character .character-text
+{
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+.character .character-text span
+{
+    display: block;
+}
+
+.character .character-text .name
+{
+    font-size: 105%;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.character .character-text .level
+{
+    font-size: 90% !important;
+}
+
+.character .character-text .class
+{
+    font-size: 90% !important;
+}
+
+.character .character-text .spec
+{
+    font-size: 80%;
+}
+
+.character .thumb
+{
+    float: left;
+    width: 95px;
+}
+
+.ui-dialog
+{
+    position: fixed !important;
+    font-family: 'Englebert' , sans-serif;
+}
+
+.wowhead-tooltip-powered
+{
+    display: none !important;
+}
+
+#stats
+{
+    float: right;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    width: 140px;
+    height: 523px;
+    padding-left: 15px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    font-size: 12pt;
+}
+
+#stats .stat
+{
+    display: block;
+    font-family: 'Englebert' , sans-serif;
+    font-size: 80%;
+}
+
+#stats .stat span
+{
+    color: #D19813;
+    margin-right: 20px;
+    width: 69px;
+    display: inline-block;
+}
+
+#stats .stat-title
+{
+    margin-top: 10px;
+    display: block;
+}
+
+#popupContent .title
+{
+    font-family: 'Englebert' , sans-serif;
+    color: #ffffff;
+    font-size: 125%;
+    position: absolute;
+    top: 25px;
+    left: 260px;
+    float: left;
+    font-weight: bold;
+}
+
+#popupContent
+{
+    width:100%;
+    height:100%;
+}
+
+#popupData
+{
+    width:100%;
+    height:100%;
+}
+
+#popupContent .popup-page
+{
+    width:100%;
+    height:100%;
+    display:none;
+}
+
+#pgStats
+{
+    background-size: 752px auto;
+    background-repeat: no-repeat no-repeat;
+    background-position: -140px;
+}
+
+#items
+{
+    width: 595px;
+    height: 495px;
+}
+
+#items .item
+{
+    display: block;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 6px;
+    box-shadow: 0px 0px 65px 0px #ffffff;
+}
+
+#items .head
+{
+    left: 20px;
+    top: 20px;
+}
+
+#items .neck
+{
+    left: 20px;
+    top: 20px;
+}
+
+#items .shoulder
+{
+    left: 20px;  top: 20px;
+}
+
+#items .back
+{
+    left: 20px;  top: 20px;
+}
+
+#items .chest
+{
+    left: 20px;  top: 20px;
+}
+
+#items .wrist
+{
+    left: 20px;  top: 20px;
+}
+
+#items .hands
+{
+    left: 520px;
+    top: -350px;
+}
+
+#items .waist
+{
+    top: -350px;
+    left: 520px;
+}
+
+#items .legs
+{
+    top: -350px;
+    left: 520px;
+}
+
+#items .feet
+{
+    top: -350px;
+    left: 520px;
+}
+
+#items .finger1
+{
+    top: -350px;
+    left: 520px;
+}
+
+#items .finger2
+{
+    top: -350px;
+    left: 520px;
+}
+
+#items .trinket1
+{
+    top: -350px;
+    left: 520px;
+}
+
+
+#items .trinket2
+{
+    top: -350px;
+    left: 520px;
+}
+
+
+#items .mainHand
+{
+    top: -410px;
+    left: 214px;
+}
+
+
+#items .offHand
+{
+    top: -471px;
+    left: 306px;
+}
+
+#guild .guild-item
+{
+    float: left;
+    width: 239px;
+    margin: 15px;
+    background-color: #e3e3e3;
+    padding: 6px;
+    border-radius: 8px;
+    background-image: url(../img/bg2.jpg);
+    color: #ffffff;
+    display: block;
+    box-shadow: 0px 0px 12px 0px #ffffff;
+    height: 60px;
+}
+
+#guild .guild-item .guild-item-icon
+{
+    width: 60px;
+    float: left;
+    margin-right: 8px;
+}
+
+#guild .guild-item .guild-item-title
+{
+    color: #ffffff;
+    position: relative;
+    font-size: 82%;
+    display: block;
+}
+
+#guild .guild-item .guild-item-date
+{
+    font-size: 60%;
+    color: #000000;
+}
+
+#news .news-item
+{
+    float: left;
+    width: 130px;
+    margin: 15px;
+    background-color: #e3e3e3;
+    padding: 6px;
+    height: 151px;
+    border-radius: 8px;
+    text-align: center;
+    background-image: url(../img/bg2.jpg);
+    color: #ffffff;
+    box-shadow: 0px 0px 12px 0px #ffffff;
+}
+
+#news .news-item .news-item-name
+{
+    display: block;
+}
+
+#news .news-item .news-item-description
+{
+    display: block;
+    font-size: 70%;
+    color: #000000;
+}
+
+#news .news-item .news-item-date
+{
+    font-size: 60%;
+}
+
+#.ui-dialog .ui-dialog-titlebar
+{
+    background-image: url(../img/bg2.jpg);
+    color: #ffffff;
+}
+
+#txtSearch
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+.ui-widget-header
+{
+    background-image: url(../img/bg2.jpg) !important;
+    color: #ffffff !important;
+}
+
+#search-filters
+{
+    margin-bottom: 5px;
+    height: 42px;
+}
+
+#search-filters div
+{
+    height: 40px;
+    width: 38px;
+    float: left;
+    margin-right: 10px;
+    box-shadow: 0px 0px 8px 0px #e3e3e3;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#search-filters #btnDK
+{
+    background-image: url(../img/dk.png);
+}
+
+#search-filters #btnDruid
+{
+    background-image: url(../img/druid.png);
+}
+
+#search-filters #btnHunter
+{
+    background-image: url(../img/hunter.png);
+}
+
+#search-filters #btnMage
+{
+    background-image: url(../img/mage.png);
+}
+
+#search-filters #btnPala
+{
+    background-image: url(../img/pala.png);
+}
+
+#search-filters #btnPriest
+{
+    background-image: url(../img/priest.png);
+}
+
+#search-filters #btnRogue
+{
+    background-image: url(../img/rogue.png);
+}
+
+#search-filters #btnShaman
+{
+    background-image: url(../img/shaman.png);
+}
+
+#search-filters #btnWarlock
+{
+    background-image: url(../img/warlock.png);
+}
+
+#search-filters #btnWarrior
+{
+    background-image: url(../img/warrior.png);
+}
+
+#search-filters #btnMonk
+{
+    background-image: url(../img/pandaren.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.progression
+{
+}
+
+.progession h2
+{
+    color: #ffffff;
+}
+
+.progression table
+{
+    width: 100%;
+}
+
+.progression table thead tr
+{
+    color:#ffffff;
+    text-align: left;
+    background-color:#6c6c6c;
+}
+
+.progression table tbody tr:nth-child(odd)
+{
+    background-color:#e3e3e3;
+}
+
+
+#navigation
+{
+    display:block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    font-size: 135%;
+    background-color: #6c6c6c;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    top: -29px;
+    color: #ffffff;
+}
+
+#navigation li
+{
+    display: inline-block;
+    height: 50px;
+    list-style-type: none;
+    margin-left: 20px;
+    line-height: 49px;
+    cursor: pointer;
+}
+
+#container .page
+{
+    display:none;
+}
+
+#popup-menu
+{
+    position: relative;
+    
+    top: -50px;
+    left: -20px;
+}
+
+#btnCharacterProgression
+{
+    background-image:url(../img/goldstar.png);
+    height:64px;
+    width:64px;
+}
+
+#pgAchivments
+{
+    font-size: 50%;
+    overflow-y: scroll;
+}

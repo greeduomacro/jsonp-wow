@@ -1,0 +1,124 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Cónvíction</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1");
+        google.load("jqueryui", "1");
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/wow.css">
+    <script type="text/javascript" src="script/wow.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Englebert' rel='stylesheet' type='text/css'>
+    <link href='https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' rel='stylesheet'
+        type='text/css'>
+    <script type="text/javascript" src="https://static.wowhead.com/widgets/power.js"></script>
+</head>
+<body>
+    <img src="img/loader.GIF" alt="loading" id="imgLoading" style="display: block; margin: 100px auto;" />
+    <div id="header" style="display: none;">
+        <div id="logo">
+        </div>
+        <div id="header-title">
+            Dauntless</div>
+    </div>
+    <div id="container" style="display: none;">
+        <ul id="navigation">
+            <li onclick="$('.page').hide();$('#pgHome').show();">Home</li>
+            <li onclick="$('.page').hide();$('#pgMembers').show();">Members</li>
+            <li onclick="$('.page').hide();$('#pgProgression').show();">Progression</li>
+            <li onclick="$('.page').hide();$('#pgNews').show();">News</li>
+            <li onclick="$('.page').hide();$('#pgContact').show();">Contact</li>
+        </ul>
+        <div id="pgHome" class="page" style="display: block;">
+            <h1>
+                Dauntless</h1>
+            <img src="img/sha.jpg" alt="sha" style="float: right;" />
+            <p>
+                <!-- YOUR STARTS TEXT HERE -->
+                    Welcome to Dauntless We are a horde 10 man raiding guild!
+                 <!-- YOUR ENDS TEXT HERE -->
+                </p>
+        </div>
+        <div id="pgMembers" class="page">
+            <div id="members">
+                <h1 id="lblMembersTitle">
+                    Members</h1>
+                <h3>
+                    Filter</h3>
+                <input type="text" placeholder="search" id="txtSearch" />
+                <div id="search-filters">
+                    <div id="btnDK" title="death knight" data-name="Death Knight">
+                    </div>
+                    <div id="btnDruid" title="druid" data-name="Druid">
+                    </div>
+                    <div id="btnHunter" title="hunter" data-name="Hunter">
+                    </div>
+                    <div id="btnMage" title="mage" data-name="Mage">
+                    </div>
+                    <div id="btnPala" title="paladin" data-name="Paladin">
+                    </div>
+                    <div id="btnMonk" title="monk" data-name="Monk">
+                    </div>
+                    <div id="btnPriest" title="priest" data-name="Priest">
+                    </div>
+                    <div id="btnRogue" title="rogue" data-name="Rogue">
+                    </div>
+                    <div id="btnShaman" title="shaman" data-name="Shaman">
+                    </div>
+                    <div id="btnWarlock" title="warlock" data-name="Warlock">
+                    </div>
+                    <div id="btnWarrior" title="warrior" data-name="Warrior">
+                    </div>
+                </div>
+            </div>
+            <div id="dialog" title="Character Details">
+                <div id="popupContent">
+                    <div id="popupData">
+                        <div id="pgStats" class="popup-page" style="display: block;">
+                            <div id="stats">
+                            </div>
+                            <div id="items">
+                            </div>
+                        </div>
+                        <div id="pgAchivments" class="popup-page">
+                        </div>
+                    </div>
+                    <div id="popup-menu">
+                        <div id="btnCharacterProgression" onclick="$('#pgAchivments').toggle();$('#pgStats').toggle();"></div>
+                    </div>
+                    <br style="clear: both;" />
+                </div>
+                <img src="img/loader.GIF" alt="loading" id="imgPopupLoading" style="display: block;
+                    margin: 50px auto;" />
+            </div>
+        </div>
+        <div id="pgProgression" class="page">
+            <div id="progression">
+                <h1>
+                    Guild Progression</h1>
+            </div>
+        </div>
+        <div id="pgNews" class="page">
+            <div id="news">
+                <h1>
+                    Guild News</h1>
+            </div>
+            <br style="clear: both;" />
+            <div id="guild">
+                <h1>
+                    Guild Achievements</h1>
+            </div>
+        </div>
+        <div id="pgContact" class="page">
+            <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dElvYVFsSlRablZ1dkdlemtiakZSZVE6MA"
+                width="760" height="1016" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init();
+        });
+    </script>
+</body>
+</html>
